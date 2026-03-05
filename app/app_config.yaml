@@ -1,0 +1,3 @@
+data: "../data/cleaned/df_cleaned.xlsx"
+model: "../artifacts/model.pkl"
+column_enc: "../config/column_config/"
