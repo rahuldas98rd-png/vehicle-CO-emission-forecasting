@@ -389,6 +389,11 @@ streamlit run app.py
 
 ---
 
+## App Preview
+![App Preview](app/images/app_preview.png)
+
+---
+
 ## 🛠️ Tech Stack
 
 | Category         | Tools                                              |
