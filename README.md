@@ -359,7 +359,7 @@ streamlit run app.py
 
 ```bash
 git clone https://github.com/<your-username>/vehicle-CO-emission-forecasting.git
-cd co2-emission-forecasting
+cd vehicle-CO-emission-forecasting
 ```
 
 ### 2. Install dependencies
