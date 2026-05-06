@@ -1,5 +1,17 @@
 import streamlit as st
 from backend import Prediction
+from pathlib import Path
+import yaml
+
+# Project root
+root_path = Path(__file__).resolve().parent.parent
+
+# Load config
+config_path = root_path / "app" / "app_config.yaml"
+with open(config_path, "r") as f:
+    config = yaml.safe_load(f)
+
+img_file_path = root_path / "app" / config['static']
 
 extract = Prediction()
 
@@ -78,7 +90,7 @@ if make != make_options[0]:
 col1, col2 = st.columns([2, 1])
 
 with col1:
-    st.image("images/car.jpg",
+    st.image(img_file_path,
              caption="Vehicle emissions illustration", width=700)
 
 with col2:
